@@ -13,8 +13,9 @@
     <div class="input-field">
       {{input value=content id="content" placeholder="Description of Route and Trip"}}
     </div>
-    <button {{action 'savePost'}}>Add Trip Report</button>
+    <button class="btn" {{action 'savePost'}}>Add Trip Report</button>
   </form>
 {{else}}
-  <button {{action 'postFormShow'}}>Add Blog Post</button>
+  <br>
+  <button class="btn-large" {{action 'postFormShow'}}>Add New Blog Post</button>
 {{/if}}

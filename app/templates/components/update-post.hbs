@@ -1,0 +1,23 @@
+{{#if updatePostForm}}
+  <h4>Update {{post.title}}</h4>
+  <div>
+    <form>
+      <div class="input-field">
+        {{input value=title id="title" placeholder=post.title}}
+      </div>
+      <div class="input-field">
+        {{input value=date id="date" placeholder=post.date}}
+      </div>
+      <div class="input-field">
+        {{input value=photo id="photo" placeholder=post.photo}}
+      </div>
+      <div class="input-field">
+        {{input value=content id="content" placeholder=post.content}}
+      </div>
+      <button class="btn" {{action 'update' post}}>Update Post Details</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn" {{action 'updatePostForm'}}>Update Post</button>
+  <br>
+{{/if}}

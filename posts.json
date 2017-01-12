@@ -1,0 +1,17 @@
+{ "posts": [{
+  "date": "2017-01-01",
+  "photo": "http://www.visitskagitvalley.com/wp-content/uploads/climb_mt_shuksan.jpg",
+  "title": "Mt Shuksan",
+  "content": "Fisher Chimneys route"
+  }, {
+    "date": "2016-06-01",
+    "photo": "http://www.summitpost.org/images/medium/659454.jpg",
+    "title": "Mt Baker",
+    "content": "Coleman Deming route"
+  }, {
+    "date": "2016-10-01",
+    "photo": "http://cdn1.buuteeq.com/upload/21004/shutterstock_80423284.jpg.1920x1080_default.jpg",
+    "title": "Mt Rainier",
+    "content": "Emmons Glacier route"
+  }]
+}

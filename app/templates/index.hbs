@@ -1,5 +1,12 @@
 <div class="container">
   <h1>2017 Climbing Season Blog</h1>
+
+  <ul>
+    {{#each model as |post|}}
+      {{post-tile post=post}}
+    {{/each}}
+  </ul>
+
   {{#link-to 'about'}}About this blog{{/link-to}} |
   {{#link-to 'contact'}}Contact Information{{/link-to}}
 </div>

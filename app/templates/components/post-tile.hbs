@@ -1,5 +1,6 @@
 <li>
-  <h3>{{post.title}} | {{post.date}}</h3>
+  <h3>{{#link-to 'post' post.id}}
+    {{post.title}} | {{post.date}}{{/link-to}}</h3>
   <br>
   <img src={{post.photo}} alt={{post.title}}>
   <br>

@@ -1,0 +1,19 @@
+{{#if addNewComment}}
+<h4>New Comment</h4>
+  <div>
+    <form>
+      <div class="input-field">
+        {{input value=author id="author" placeholder="Your Name"}}
+      </div>
+      <div class="input-field">
+        {{input value=date id="date" placeholder="Today's Date"}}
+      </div>
+      <div class="input-field">
+        {{input value=content id="content" placeholder="Enter Your Comment"}}
+      </div>
+      <button class="btn" {{action 'saveComment'}}>Add Comment</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn" {{action 'commentFormShow'}}>New Comment</button>
+{{/if}}

@@ -1,0 +1,10 @@
+<h4>{{post.title}} | {{post.date}}</h4>
+<br>
+<img src={{post.photo}}>
+<br>
+<h5>{{post.content}}</h5>
+<ul>
+  {{#each post.comments as |comment|}}
+    <li>{{comment.author}} | {{comment.date}} <br> {{comment.content}}</li>
+  {{/each}}
+</ul>
